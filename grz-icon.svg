@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="GRZ">
+  <title>GRZ</title>
+  <defs>
+    <linearGradient id="disc" x1="256" y1="64" x2="256" y2="452" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2FE6EC"/>
+      <stop offset=".55" stop-color="#12BEE2"/>
+      <stop offset="1" stop-color="#0C93D2"/>
+    </linearGradient>
+    <linearGradient id="helmet" x1="166" y1="140" x2="350" y2="366" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8E78F2"/>
+      <stop offset=".5" stop-color="#6D54E2"/>
+      <stop offset="1" stop-color="#4E35B8"/>
+    </linearGradient>
+    <linearGradient id="crest" x1="256" y1="150" x2="256" y2="206" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#A694F7"/>
+      <stop offset="1" stop-color="#7C63EC"/>
+    </linearGradient>
+    <linearGradient id="ear" x1="256" y1="226" x2="256" y2="304" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7C66EC"/>
+      <stop offset="1" stop-color="#523AC0"/>
+    </linearGradient>
+    <linearGradient id="visor" x1="256" y1="172" x2="256" y2="330" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#16305F"/>
+      <stop offset="1" stop-color="#091A38"/>
+    </linearGradient>
+    <linearGradient id="glare" x1="190" y1="186" x2="250" y2="268" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".30"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <g id="grz-mark">
+    <circle cx="256" cy="256" r="190" fill="url(#disc)"/>
+
+    <!-- orelhas -->
+    <rect x="116" y="226" width="42" height="80" rx="21" fill="url(#ear)"/>
+    <rect x="354" y="226" width="42" height="80" rx="21" fill="url(#ear)"/>
+    <rect x="124" y="236" width="12" height="46" rx="6" fill="#ffffff" opacity=".18"/>
+
+    <!-- capacete -->
+    <rect x="138" y="140" width="236" height="232" rx="96" fill="url(#helmet)"/>
+    <rect x="138" y="140" width="236" height="232" rx="96" fill="none" stroke="#3A2694" stroke-opacity=".30" stroke-width="5"/>
+    <path d="M186 183c17-21 42-33 70-33s53 12 70 33c-21-9-45-14-70-14s-49 5-70 14z" fill="url(#crest)" stroke="#3A2694" stroke-opacity=".22" stroke-width="3"/>
+
+    <!-- visor -->
+    <rect x="164" y="186" width="184" height="152" rx="64" fill="url(#visor)"/>
+    <rect x="164" y="186" width="184" height="152" rx="64" fill="none" stroke="#2EE3E6" stroke-opacity=".18" stroke-width="3"/>
+    <path d="M200 194h38c-29 17-48 46-52 80l-12-28c4-21 12-38 26-52z" fill="url(#glare)"/>
+
+    <!-- rosto -->
+    <g fill="none" stroke="#3BF0DF" stroke-width="15" stroke-linecap="round" filter="url(#glow)">
+      <path d="M190 252q22-29 44 0"/>
+      <path d="M278 252q22-29 44 0"/>
+      <path d="M214 282q42 43 84 0"/>
+    </g>
+  </g>
+</svg>
